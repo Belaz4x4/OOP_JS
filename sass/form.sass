@@ -2,7 +2,6 @@
     display: grid
     grid-template-columns: 1fr 1fr
     grid-gap: 1rem 4rem
-    // column-gap: 
 
 .form__element
     display: grid
@@ -32,5 +31,21 @@
 .form__button:nth-child(2)
     margin-left: 2rem
 
+@media(max-width: 780px)
+    .form__input-wrapper
+        grid-template-columns: 100%
+        row-gap: 1rem
 
+    .form__label
+        font-size: 1.2rem
+
+    .form__input
+        width: 18rem
+        height: 2.2rem
+        justify-self: end
+
+        font-size: 1.2rem
+
+    .form__button:nth-child(2)
+        margin-left: 1rem
 
