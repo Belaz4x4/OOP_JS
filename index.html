@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="./js/script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="container">
+        <h1>База сотрудников</h1>
+    </header>
+
+    <body>
+        <section class="container">
+            <h2>Введите данные нового сотрудника</h2>
+            <form class="form">
+                <div class="form__input-wrapper">
+                    <div class="form__element">
+                        <label for="name" class="form__label">ФИО</label>
+                        <input type="text" id="name" name="name" class="form__input form__input_color" required
+                            autocomplete="off"></input>
+                    </div>
+                    <div class="form__element">
+                        <label for="gender" class="form__label">Пол</label>
+                        <select name="gender" id="gender" class="form__input form__input_color">
+                            <option value="" disabled selected></option>
+                            <option value="Мужской">Мужской</option>
+                            <option value="Женский">Женский</option>
+                        </select>
+                    </div>
+                    <div class="form__element">
+                        <label for="phone" class="form__label">Номер телефона</label>
+                        <input type="text" id="phone" name="phone" class="form__input form__input_color" required
+                            autocomplete="off"></input>
+                    </div>
+                    <div class="form__element">
+                        <label for="post" class="form__label">Должность</label>
+                        <select name="post" id="post" class="form__input form__input_color">
+                            <option value="" disabled selected></option>
+                            <option value="водитель">водитель</option>
+                            <option value="диспетчер">диспетчер</option>
+                            <option value="механик">механик</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form__buttons">
+                    <button class="form__button" type="submit">Записать</button>
+                    <button class="form__button" type="reset">Сбросить</button>
+                </div>
+            </form>
+        </section>
+        <section class="container">
+            <h2>Сотрудники в штате</h2>
+            <table class="table" cellspacing="0">
+                <thead>
+                    <td class="table__header table__name">ФИО</td>
+                    <td class="table__header table__gender">Пол</td>
+                    <td class="table__header table__phone">Номер телефона</td>
+                    <td class="table__header table__post">Должность</td>
+                    <td class="table__header table__del">Удалить</td>
+                </thead>
+            </table>
+
+        </section>
+    </body>
+
+
+
+</body>
+
+</html>
